@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.has-x-large-font-size {
+  @apply text-4xl;
+}
+
+.has-large-font-size {
+  @apply text-2xl;
+}
+
+.has-medium-font-size {
+  @apply text-base;
+}
+
+.has-small-font-size {
+  @apply text-sm;
+}
+
+.has-text-align-center {
+  @apply text-center;
+}
+
+.has-text-align-left {
+  @apply text-left;
+}
+
+.has-text-align-right {
+  @apply text-right;
+}
+
+.aligncenter {
+  @apply mx-auto;
+}
+
+.alignwide {
+  @apply w-full max-w-screen-lg;
+}
+
+.alignfull {
+  @apply w-screen;
+}

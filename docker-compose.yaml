@@ -27,6 +27,8 @@ services:
       - WORDPRESS_DB_USER=wordpress
       - WORDPRESS_DB_PASSWORD=wordpress
       - WORDPRESS_DB_NAME=wordpress
+    volumes:
+      - wordpress_uploads:/var/www/html/wp-content/uploads
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -44,7 +46,7 @@ services:
   client:
     build:
       context: ./client
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     ports:
       - "5173:5173"
     volumes:
@@ -54,8 +56,10 @@ services:
       - .env
     environment:
       - NODE_ENV=development
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL}
     depends_on:
       - wordpress
 
 volumes:
   db_data:
+  wordpress_uploads:
