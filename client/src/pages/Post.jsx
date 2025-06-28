@@ -39,7 +39,8 @@ function Post() {
             </button>
           </div>
         </div>
-        <h1 className='text-4xl mb-8'>{post.title.rendered}</h1>
+        
+        <h1 className="text-4xl mb-8" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
         <div className='space-y-8' dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
       </article>
 

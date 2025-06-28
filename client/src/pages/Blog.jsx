@@ -46,14 +46,14 @@ function Blog() {
                   day: "numeric",
                 }) }
   
-                <button className="h-6 w-6 grid place-items-center" data-id={post.id} onClick={handleShareClick}>
-                  <FontAwesomeIcon icon={faEllipsisV} className="text-gray-500 hover:text-gray-700" />
+                <button className="h-6 w-6 grid place-items-center rounded-full hover:bg-black/10" data-id={post.id} onClick={handleShareClick}>
+                  <FontAwesomeIcon icon={faEllipsisV} />
                   <span className="sr-only">More options</span>
                 </button>
               </div>
 
               <Link to={`/post/${post.id}`} className="space-y-4 block">
-                <h2 className="font-bold text-2xl">{post.title.rendered}</h2>
+                <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                 <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
               </Link>
             </div>
