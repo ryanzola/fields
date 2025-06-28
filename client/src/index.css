@@ -28,6 +28,10 @@ main {
   @apply flex-1;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 .post ul {
   @apply list-disc pl-6 space-y-2;
 }

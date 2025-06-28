@@ -85,3 +85,7 @@
 .wp-block-button__link {
   @apply inline-block px-4 py-2 rounded;
 }
+
+.post figure > img {
+  @apply w-full;
+}

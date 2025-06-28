@@ -1,0 +1,1 @@
+gcloud compute scp --recurse ./client calm-fields-demo:~/calm-fields
