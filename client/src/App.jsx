@@ -11,6 +11,7 @@ import Newsletter from './pages/Newsletter'
 import Team from './pages/Team'
 import Feedback from './pages/Feedback'
 import PressKit from './pages/PressKit'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 // components
 import Header from './components/Header'
@@ -38,6 +39,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/press-kit" element={<PressKit />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
       <Footer />

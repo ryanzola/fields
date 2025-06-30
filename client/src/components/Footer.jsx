@@ -12,7 +12,7 @@ function Footer() {
       <div className="space-y-2 flex flex-col items-center md:items-start">
         <img className="w-[95px]" src={npcLogo} alt="NPC Studios" />
         <div className="text-xs">
-          © 2019-2025 NPC Studio. View Privacy Policy
+          © 2019-2025 NPC Studio. <a href="/privacy-policy" className="underline hover:text-blue-500">View Privacy Policy</a>
         </div>
       </div>
 
